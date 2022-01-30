@@ -1,5 +1,7 @@
       h1 {
         font-family:sans-serif;
+        color: orange;
+        font-size: 65px;
       }
 
       p{
@@ -31,16 +33,23 @@
 
       .b {
         text-align: center;
+        
       }
 
       .c{
         border: 3px solid #1b18cf;
-        position: fixed;
-        width: 16%;
-        top: 10px;
-        padding-left: 25px;
+        position: absolute;
+        right: 2%;
+        top: 30%;
+        width: 40%;
+        
+        
         }
 
+        .g{
+          background-color: paleturquoise;
+          width: 30%;
+        }
 
         li {
           border: 2px solid #FF6347;
@@ -49,11 +58,14 @@
           width: 195px;
         }
 
+        
+
+	/*bordas da lista de cores */
         .d {
           position: relative;
           left: 55px;
           top: 0px;
-          z-index: -1;
+        
           background-color: green;
         }
         .e{
@@ -62,4 +74,9 @@
         .f{
           background-color:black;
           color: burlywood;
+        }
+
+
+       .u {
+        background-color: rebeccapurple;
         }
