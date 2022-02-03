@@ -33,6 +33,17 @@ const anguloA = 80,
 let nomePeca = "REI";
 let nomePecaConvertido;
 
+let grade = 92;
+
+const numA = 3,
+    numB = 5,
+    numC = 9;
+
+let bol = false;
+
+const custoDeProduto = 100,
+    valorDeVenda = 200;
+
 console.log("Soma de A e B");
 console.log(a + b);
 
@@ -108,6 +119,105 @@ if (nomePecaConvertido == "rei") {
 } else {
     console.log("Nome da peça digitada errrada! tente novamente!")
 }
+
+
+if (grade >= 90) {
+    console.log("Nota A");
+} else if (grade >= 80) {
+    console.log("Nota B");
+} else if (grade >= 70) {
+    console.log("Nota C");
+} else if (grade >= 60) {
+    console.log("Nota D");
+} else if (grade >= 50) {
+    console.log("Nota E");
+} else if (grade < 50) {
+    console.log("Nota F");
+} else {
+    console.log("largue de ser abestado e bote a nota certa !")
+}
+
+
+if (numA % 2 == 0 || numB % 2 == 0 || numC % 2 == 0) {
+    console.log("Tem Número PAR!");
+    bol = true;
+    console.log(bol);
+} else {
+    console.log("só tem número IMPAR!");
+    console.log(bol);
+}
+
+
+if (numA % 2 == 1 || numB % 2 == 1 || numC % 2 == 1) {
+    console.log("Tem Número IMPAR!");
+    bol = true;
+    console.log(bol);
+} else {
+    console.log("só tem número PAR!");
+    console.log(bol);
+}
+
+
+//valor de custo e de venda
+if (valorDeVenda < 0 || custoDeProduto < 0) {
+    console.log("tem coisa errada ai");
+}
+
+let valorCustoTotal = custoDeProduto + (20 / 100) * custoDeProduto;
+let lucro = valorDeVenda - valorCustoTotal;
+
+console.log("O lucro é de " + (lucro * 1000));
+
+
+
+//11
+let salBruto = 2100; //adicione o novo salario aaqui !!!
+salBruto = salBruto;
+let salbruto02 = salBruto;
+let salBrutoSemInss, salBrutoSemImpostoR;
+let deducao;
+let deducao02;
+
+if (salBruto <= 1556.94) {
+    salBrutoSemInss = salBruto - (salBruto * (8 / 100))
+} else if (salBruto <= 2594.92) {
+    salBrutoSemInss = salBruto - (salBruto * (9 / 100))
+} else if (salBruto <= 5189.82) {
+    salBrutoSemInss = salBruto - (salBruto * (11 / 100))
+} else {
+    salBrutoSemInss = salBruto - 570.88;
+}
+console.log("Deduzido INSS fica: " + salBrutoSemInss);
+
+
+
+if (salbruto02 <= 1903.98) {
+    console.log("Escapou da onça! vá trabalhar mais");
+    deducao02 = 0;
+    salBrutoSemImpostoR = 0;
+} else if (salbruto02 <= 2826.65) {
+    salBrutoSemImpostoR = salbruto02 - (salbruto02 * (7.5 / 100)) - 142.80;
+} else if (salbruto02 <= 3751.05) {
+    salBrutoSemImpostoR = salBruto02 - (salbruto02 * (15 / 100)) - 354.80;
+} else if (salbruto02 <= 4664.68) {
+    salBrutoSemImpostoR = salbruto02 - (salbruto02 * (22.5 / 100)) - 636.13;
+} else {
+    salBrutoSemImpostoR = salbruto02 - (salbruto02 * (27.5 / 100)) - 869.36;
+}
+
+deducao = salBruto - salBrutoSemInss;
+deducao02 = salbruto02 - salBrutoSemImpostoR;
+
+
+console.log("Deduzido Imposto de Renda: " + salBrutoSemImpostoR);
+
+console.log("Deduzido Imposto de Renda e INSS: " + ((salbruto02 - deducao) - deducao02));
+
+
+
+
+
+
 
 
 // Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas constantes, a e b , definidas no começo com os valores que serão operados. Faça programas para:
