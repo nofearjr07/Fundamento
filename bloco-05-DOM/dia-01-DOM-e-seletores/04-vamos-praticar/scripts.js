@@ -9,8 +9,6 @@
             //   let texto = document.getElementsByTagName("p")[i]; 
             //   texto.innerText = "com trabalho TOP e viajando todo fim de semana!";
             // }
-
-
           }
           mudaTextoP("com trabalho TOP e viajando todo fim de semana!");
      
@@ -47,7 +45,7 @@ mudarFundoVermelhoBranco("rgb(255, 255, 255)");
 //q04 
 function correcaoTexto(t){
   let texto = document.getElementsByClassName("title")[0];
-  texto.innerText = t;
+  console.log(texto.innerText = t);
 }
 correcaoTexto("Exercício 5.1 - JavaScript");
 
@@ -55,7 +53,8 @@ correcaoTexto("Exercício 5.1 - JavaScript");
 //q05
 function paragrafoMaiusculo(){
   let paragrafo = document.getElementsByTagName("p")[0];
-  paragrafo.innerText = paragrafo.innerText.toUpperCase();
+  // paragrafo.innerText = paragrafo.innerText.toUpperCase();
+  console.log(paragrafo.innerText = paragrafo.innerText.toUpperCase());
   // paragrafo.innerText = "posso sobrescrever o texto por aqui mesmo atrbuindo esse valor".toUpperCase();
  
 }
